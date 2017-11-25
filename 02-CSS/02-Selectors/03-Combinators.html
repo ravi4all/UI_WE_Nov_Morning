@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #parent > p {
+            font-size: 20px;
+            color: red;
+        }
+        #parent .child p {
+            color: green;
+        }
+        #parent + h2 {
+            color: orange;
+        }
+        #parent ~ h2 {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Combinators</h1>
+   
+   <div id="parent">
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora odio reiciendis, molestias totam consequatur ullam amet vel est, soluta aspernatur perferendis repudiandae alias magni voluptatem pariatur illo, omnis consectetur itaque.
+       </p>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, in? Impedit facere ad hic, pariatur necessitatibus aut, odit deserunt cum quos? Expedita ab accusantium quidem, perspiciatis optio similique modi fugiat.
+       </p>
+       <div class="child">
+           <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quisquam beatae laudantium odio dolorem a assumenda molestiae sed aliquam placeat, saepe quo harum voluptatum perferendis! Eligendi dignissimos ut veniam voluptas.
+           </p>
+       </div>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, fugit numquam eaque tenetur voluptatem quia dolorem quisquam est earum porro excepturi fugiat minima amet quam illo. Quia nam, dolores quasi.
+       </p>
+   </div>
+    <hr>
+    <h2>This heading is outside parent div</h2>
+    <h2>This heading is outside parent div</h2>
+    <h2>This heading is outside parent div</h2>
+    <div>
+        <h2>This heading is outside parent div</h2>
+    </div>
+    
+</body>
+</html>
