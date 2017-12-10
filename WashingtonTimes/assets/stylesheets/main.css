@@ -30,7 +30,7 @@ body {
     width: 85%;
 }
 #header .logo a {
-    padding: 10px 0px;
+    padding: 10px 0px 8px;
     display: inline-block;
 }
 
@@ -56,16 +56,73 @@ body {
     text-decoration: none;
     font-weight: 700;
 }
-#main-navigation ul li:hover a {
+#main-navigation ul li a:hover{
     background-color: #A9091F;
 }
+#main-navigation .dropdown {
+    position: relative;
+}
+#main-navigation .dropdown::after {
+    content: "";
+    border: 5px solid #fff;
+    position: absolute;
+    top: 25px;
+    border-color: #fff transparent;
+    border-bottom: none;
+    right: 0px;
+}
+
+#main-navigation .dropdown-menu {
+    position: absolute;
+    width: 180%;
+    border: 1px solid;
+    display: none;
+}
+#main-navigation .dropdown-menu ul li{
+    display: block;
+    text-transform: capitalize;
+}
+#main-navigation .dropdown-menu ul li a{
+    font-size: 14px;
+    color: #000;
+    padding: 8px;
+}
+#main-navigation .dropdown-menu ul li a:hover {
+    background-color: #EDEDED;
+}
+
+#main-navigation .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 
 .social_links {
+    padding-top: 10px;
     width: 20%;
 }
 .social_links ul li {
+    font-size: 20px;
     display: inline-block;
+    width: 30px;
+    text-align: center;
+    height: 25px;
+    padding-top: 5px;
 }
 .social_links ul li a {
     color: #fff;
+}
+.social_links ul li.fb {
+    background-color: #294A80;
+}
+.social_links ul li.tw {
+    background-color: #278EB6;
+}
+.social_links ul li.inst {
+    background-color: #8A3981;
+}
+.social_links ul li.gp {
+    background-color: #AE432A;
+}
+.social_links ul li.rss {
+    background-color: #D0A21F;
 }
