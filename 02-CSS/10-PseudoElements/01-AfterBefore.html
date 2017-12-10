@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        h1:after {
+            content: "";
+            border: 1px solid red;
+            position: absolute;
+            width: 40%;
+            right: 0px;
+            top: 40px;
+        }
+        h1::before {
+            content: "";
+            border: 1px solid red;
+            position: absolute;
+            width: 40%;
+            left: 0px;
+            top: 40px;
+        }
+        div {
+            height: 0px;
+            width: 300px;
+            border: 50px solid;
+            border-color: red blue green yellow;
+        }
+        div:after {
+            content: "";
+            border: 80px solid;
+            border-color: red transparent;
+            border-bottom: none;
+            position: absolute;
+            left: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using After Before</h1>
+
+    <div></div>
+
+
+    
+</body>
+</html>
