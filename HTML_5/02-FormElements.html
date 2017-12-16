@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Form Elements</h1>
+   
+   <form action="#">
+       <table>
+           <tr>
+               <td><label for="username">Enter Name</label></td>
+               <td>
+                   <input type="text" required id="username" placeholder="Enter Name">
+               </td>
+           </tr>
+           <tr>
+               <td>Enter Password</td>
+               <td>
+                    <input type="password" required placeholder="Enter Password">
+               </td>
+           </tr>
+           <tr>
+               <td>Enter Email</td>
+               <td>
+                   <input type="email" placeholder="Enter email">
+               </td>
+           </tr>
+           <tr>
+               <td>Enter DOB</td>
+               <td>
+                   <input type="date">
+               </td>
+               <td>
+                   <input type="time">
+               </td>
+               <td>
+                   <input type="datetime-local">
+               </td>
+               <td>
+                   <input type="month">
+               </td>
+               <td>
+                   <input type="week">
+               </td>
+           </tr>
+           <tr>
+               <td>Enter URL</td>
+               <td>
+                   <input type="url" placeholder="Enter URL">
+               </td>
+           </tr>
+           <tr>
+               <td>Enter Age</td>
+               <td>
+                   <!--<input type="number">-->
+                   <input type="number" min="18" max="30">
+               </td>
+           </tr>
+           <tr>
+               <td>Enter Mobile No</td>
+               <td>
+                   <input type="text" placeholder="Enter Mobile No" maxlength="10">
+               </td>
+           </tr>
+           <tr>
+               <td>Select Range</td>
+               <td>
+                   <input type="range" value="50" min="0" max="100" onchange="output.value = value;" step="5">
+               </td>
+               <td>
+                   <output id="output">50</output>
+               </td>
+           </tr>
+           <tr>
+               <td>Your Progress</td>
+               <td>
+                   <progress value="30" max="100"></progress>
+               </td>
+           </tr>
+           <tr>
+               <td>Enter Card No</td>
+               <td>
+                   <input type="text" placeholder="Enter Card No" pattern="[0-9]{5}[A-Z]{1}[a-z]{5}" title="5 Digits, 1 Uppercase and 5 Lowercase">
+               </td>
+           </tr>
+           <tr>
+               <td>Enter Color</td>
+               <td>
+                   <input type="color">
+               </td>
+           </tr>
+           <tr>
+               <td>Enter Comment</td>
+               <td>
+                   <textarea cols="30" rows="10" style="resize: none;"></textarea>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <input type="reset">
+               </td>
+               <td>
+                   <input type="submit" value="Register">
+               </td>
+           </tr>
+       </table>
+   </form>
+    
+</body>
+</html>
