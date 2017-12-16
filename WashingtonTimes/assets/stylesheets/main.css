@@ -17,6 +17,10 @@ body {
     display: block;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
 #header {
     background-color: #040404;
 }
@@ -125,4 +129,107 @@ body {
 }
 .social_links ul li.rss {
     background-color: #D0A21F;
+}
+
+
+/*
+Common CSS
+*/
+.sidebar .widget ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.sidebar .widget li {
+    margin-bottom: 20px;
+}
+.sidebar .widget li .image {
+    width: 30%;
+}
+.sidebar .widget li .description {
+    width: 65%;
+    margin-left: 10px;
+}
+.sidebar .widget h3 a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*
+Content
+*/
+#content {
+    margin-top: 100px;
+    padding: 0px 20px;
+}
+
+
+
+
+/*
+Sidebar_1
+*/
+#sidebar_1 {
+    width: 25%;
+}
+
+
+/*
+Main
+*/
+#main {
+    width: 45%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#main .red-ribbon {
+    background-color: #B00021;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 10px;
+    display: inline-block;
+    width: 35%;
+    margin-left: -15px;
+    position: relative;
+}
+#main .red-ribbon:after {
+    content: "";
+    border: 23px solid #fff;
+    border-color: transparent #fff;
+    border-left: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+
+/*
+Section_1
+*/
+#section_1 {
+    padding: 0px 15px;
+}
+#section_1 img {
+    width: 100%;
+}
+#section_1 .title {
+    font-size: 26px;
+}
+#section_1 .title a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*
+Sidebar_2
+*/
+#sidebar_2 {
+    width: 25%;
+    margin-left: 15px;
+}
+#sidebar_2 .widget li {
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #000;
 }
